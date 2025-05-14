@@ -2,12 +2,12 @@
 Sentiment Analysis: Model Comparison
 Author: Deekshitha Chowdary Kalluri
 
-This repository contains the code and writeup for my term project in CIS 730 – Artificial Intelligence.
+This repository contains the code and writeup for my term project in CIS 732 – Machine Learning.
 
 📂 Included Files
 SentimentClassification.ipynb — Main notebook for training and evaluating models
 
-FINAL REPORT.pdf — Complete project writeup (6 pages)
+FINAL REPORT.pdf — Complete project writeup
 
 FINAL PPT.pptx — Project presentation slides
 
