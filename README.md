@@ -1,98 +1,116 @@
-📊 Sentiment Analysis: Model Comparison
-Author: Deekshitha Chowdary Kalluri
-Course: CIS 732 – Machine Learning (Term Project)
+**📊 Sentiment Analysis: Model Comparison**
 
-📂 Included Files
-SentimentClassification.ipynb — Jupyter notebook for model training, evaluation, and visualization
+**Author: Deekshitha Chowdary Kalluri**
 
-FINAL REPORT.pdf — Detailed report with methodology, results, and analysis
+**Course: CIS 732 – Machine Learning (Term Project)**
 
-FINAL PPT.pptx — Summary presentation slides
+**📂 Included Files**
 
-IMDB Dataset.csv — Preprocessed, balanced IMDb movie review dataset (2,500 samples)
+- SentimentClassification.ipynb — Jupyter notebook for model training, evaluation, and visualization
 
-README.md — Project overview and submission details
+- FINAL REPORT.pdf — Detailed report with methodology, results, and analysis
 
-📝 Project Summary
+- FINAL PPT.pptx — Summary presentation slides
+
+- IMDB Dataset.csv — Preprocessed, balanced IMDb movie review dataset (2,500 samples)
+
+- README.md — Project overview and submission details
+
+**📝 Project Summary**
+
 This project evaluates and compares the performance of four sentiment classification models on a curated IMDb movie review dataset:
 
-Logistic Regression
+- Logistic Regression
 
-Linear Support Vector Classifier (LinearSVC)
+- Linear Support Vector Classifier (LinearSVC)
 
-Long Short-Term Memory (LSTM)
+- Long Short-Term Memory (LSTM)
 
-BERT (Bidirectional Encoder Representations from Transformers)
+- BERT (Bidirectional Encoder Representations from Transformers)
+
 
 All models were trained on binary-labeled data (positive vs. negative), with standardized preprocessing and evaluation using:
 
-Accuracy
+- Accuracy
 
-F1 Score
+- F1 Score
 
-AUC-ROC
+- AUC-ROC
 
-Confusion Matrix
+- Confusion Matrix
 
-🔍 Key Findings
-✅ Classical Models
-Logistic Regression
 
-Accuracy: 0.842
+**🔍 Key Findings**
+**✅ Classical Models**
 
-F1 Score: 0.8448
+- Logistic Regression
 
-AUC-ROC: 0.9256
+  - Accuracy: 0.842
 
-LinearSVC
+  - F1 Score: 0.8448
 
-Accuracy: 0.850
+  - AUC-ROC: 0.9256
 
-F1 Score: 0.8497
+- LinearSVC
 
-AUC-ROC: 0.9254
+  - Accuracy: 0.850
 
-Performed best among classical methods
+  - F1 Score: 0.8497
 
-🔁 LSTM Model
-Struggled due to limited data and vocabulary
+  - AUC-ROC: 0.9254
 
-Accuracy: 0.50, F1 Score: 0.0602
+  - Performed best among classical methods
 
-Severe underfitting observed
 
-🤖 Transformer Model (BERT)
-Pretrained BERT (no fine-tuning)
+**🔁 LSTM Model**
 
-Accuracy: 0.496, F1 Score: 0.6471
+- Struggled due to limited data and vocabulary
 
-Poor balance in classification
+- Accuracy: 0.50, F1 Score: 0.0602
 
-Fine-Tuned BERT
+- Severe underfitting observed
 
-Accuracy: 0.932, F1 Score: 0.9308, AUC-ROC: 0.977
 
-Outperformed all other models
+**🤖 Transformer Model (BERT)**
 
-📈 Statistical Analysis
+- Pretrained BERT (no fine-tuning)
+
+  - Accuracy: 0.496, F1 Score: 0.6471
+
+  - Poor balance in classification
+
+- Fine-Tuned BERT
+
+  - Accuracy: 0.932, F1 Score: 0.9308, AUC-ROC: 0.977
+
+  - Outperformed all other models
+
+
+**📈 Statistical Analysis**
+
 Paired t-tests were conducted comparing fine-tuned BERT against baseline models. While BERT achieved the best metrics, no statistically significant differences were found due to sample size limitations.
 
-📌 Conclusion
-LinearSVC is a strong classical baseline for small datasets
 
-Fine-tuned BERT achieves the best overall performance
+**📌 Conclusion**
 
-LSTM and unfine-tuned BERT models underperformed in this scenario
+- LinearSVC is a strong classical baseline for small datasets
 
-Statistical validation is critical when working with small datasets
+- Fine-tuned BERT achieves the best overall performance
 
-🔮 Future Work
-Use larger datasets
+- LSTM and unfine-tuned BERT models underperformed in this scenario
 
-Experiment with RoBERTa, DistilBERT, or LoRA adapters
+- Statistical validation is critical when working with small datasets
 
-Tune hyperparameters and training epochs
 
-Explore prompt engineering for transformer models
+**🔮 Future Work**
 
-🔗 Project Repository: https://github.com/DeekshithaKalluri/SentimentAnalysis
+- Use larger datasets
+
+- Experiment with RoBERTa, DistilBERT, or LoRA adapters
+
+- Tune hyperparameters and training epochs
+
+- Explore prompt engineering for transformer models
+
+
+**🔗 Project Repository: https://github.com/DeekshithaKalluri/SentimentAnalysis**
